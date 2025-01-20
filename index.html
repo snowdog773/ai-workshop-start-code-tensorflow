@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Detection</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+      }
+      #result img {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 10px 0;
+      }
+      #result {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Face Detection</h1>
+    <input
+      type="text"
+      id="imageUrl"
+      placeholder="Enter Image URL"
+      style="width: 300px"
+    />
+    <button id="analyzeButton">Analyze</button>
+    <div id="result"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
